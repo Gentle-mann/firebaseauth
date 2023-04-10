@@ -223,7 +223,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           Navigator.of(context).push(
                             MaterialPageRoute(builder: (context) {
                               return EmailVerificationScreen(
-                                  email: email, isNewUser: false);
+                                  email: email, isNewUser: true);
                             }),
                           );
                           final verificationError =

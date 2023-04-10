@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
               return const HomePage();
             } else if (userDao.isLoggedIn() && !userDao.isEmailVerified()) {
               return EmailVerificationScreen(
-                  email: userDao.getEmail(), isNewUser: true);
+                  email: userDao.getEmail(), isNewUser: false);
             } else {
               return const LoginPage();
             }
